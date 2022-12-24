@@ -52,9 +52,9 @@ const handleVerification = async () => {
     return (
       <>
         <h1 className="flex gap-x-4 items-center">
-          {user.photoURL && (
+          {/* {user.photoURL && (
             <img src={user.photoURL} className="w-8 h-8 rounded-full"></img>
-          )}
+          )} */}
           Hoşgeldin, {user.displayName} {user.email}
           <Link
             to="/settings"
@@ -94,7 +94,7 @@ const handleVerification = async () => {
          <ul  className="mt-4 flex flex-col gap-y-2">
 
          {todos.map((todo)=>(
-             <li key={todo.id} className="p-4 flex justify-between imtes-center rounded bg-indigo-50 text-sm text-indigo-700">
+             <li  key={todo.id} className="p-4 flex justify-between imtes-center rounded bg-indigo-50 text-sm text-indigo-700">
                <span className={`${todo.done?"line-through":""}`}>
                {todo.todo}
                </span>
